@@ -126,12 +126,20 @@ export const greeceCollections = {
 export const navigationConfig = {
   brand: "JParker Editions",
   mainNav: [
-    { label: "Fine Art Collections", href: "/collections/fine-art" },
-    { label: "Aegean Series", href: "/collections/aegean" },
-    { label: "About the Artist", href: "/about" }
+    {
+      label: "Fine Art Collections",
+      href: "#fine-art",
+      categories: [
+        { title: "Coastal & Waterscapes", featuredItem: "Scripps Pier" },
+        { title: "Classical Antiquities", featuredItem: "Colosseum Monolith" },
+        { title: "Industrial Architecture", featuredItem: "Oakland Bay Bridge" }
+      ]
+    },
+    { label: "Aegean Series", href: "#aegean" },
+    { label: "About the Artist", href: "#about" }
   ],
   actions: [
     { label: "Room Visualizer", action: "OPEN_VISUALIZER" },
-    { label: "Inquire / Cart", href: "/inquire" }
+    { label: "Inquire / Cart", href: "#inquire" }
   ]
 };

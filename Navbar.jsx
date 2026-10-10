@@ -28,7 +28,7 @@ export default function Navbar({ onOpenVisualizer }) {
 
             {dropdownOpen && (
               <div className="absolute top-full left-0 w-72 bg-stone-900 border border-stone-800 p-6 shadow-2xl space-y-4">
-                {navigationConfig.mainNav[0].categories.map((cat) => (
+                {navigationConfig.mainNav[0]?.categories?.map((cat) => (
                   <a key={cat.title} href="#fine-art" className="block group">
                     <p className="text-stone-200 group-hover:text-amber-400 transition-colors font-medium">{cat.title}</p>
                     <p className="text-[10px] text-stone-500 lowercase">featured: {cat.featuredItem}</p>
